@@ -1,8 +1,6 @@
 # Exercise 0.6 new note in SPA diagram
 
 ```mermaid
-
-```mermaid
 sequenceDiagram
       participant browser
       participant server

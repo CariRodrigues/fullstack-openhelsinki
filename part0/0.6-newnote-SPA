@@ -1,0 +1,12 @@
+# Exercise 0.6 new note in SPA diagram
+
+```mermaid
+sequenceDiagram
+participant browser
+participant server
+    Note right of browser: User writes a note and clicks Save
+    browser->>server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    server-->>browser: HTTP 201 Created
+    Note right of browser: Browser remains on the same page 
+    Note right of browser: JavaScript updates the UI with the new note
+    Note right of browser: Page is not reloaded
